@@ -8,9 +8,9 @@ interface TextProps {
 export function Text({variant = "body", children}: TextProps) {
   switch (variant) {
     case "title":
-      return <h1 className="text-4xl font-bold">{children}</h1>;
+      return <h1 className="text-7xl font-bold">{children}</h1>;
     case "subtitle":
-      return <h2 className="text-2xl font-medium">{children}</h2>;
+      return <h2 className="text-4xl font-medium">{children}</h2>;
     case "body":
       return <p>{children}</p>;
   }

@@ -8,14 +8,15 @@ interface ListLinkProps {
 }
 
 const ListLink = (props: ListLinkProps) => (
-  <li>
-    <Link href={props.href} className="uppercase font-bold ml-8 my-10 text-lg text-white hover:text-[#a5cbf1]">
+  <li className="uppercase font-bold ml-8 my-10 text-lg text-[#353535] 
+                 hover:text-black transform transition-transform duration-400 
+                 hover:-translate-y-1">
+    <Link href={props.href}>
       {props.children}
     </Link>
   </li>
 );
 
-{/* Literally copied this stuff from biomod */}
 const Links = () => (
   <ul className="flex">
     <ListLink href="/about">Meet the Team</ListLink>
@@ -32,14 +33,13 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-2">
         <div className="w-24 float-left ml-2.5 pl-2 shrink-0 mb-0.5">
           <a href="/">
-            <Image src={logo} alt="logo"/>
+            <Image src={logo} alt="logo" />
           </a>
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-9">
           <Links />
         </div>
       </div>
     </div>
   );
 }
-//hi

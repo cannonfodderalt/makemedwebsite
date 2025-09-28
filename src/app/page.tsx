@@ -1,4 +1,5 @@
-import {Text} from "@/components/Text/Text";
+import { Text } from "@/components/Text/Text";
+import Carousel from "@/components/Carousel/Carousel";
 
 export const metadata = {
   title: "Home | MakeMed",
@@ -6,8 +7,6 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-primary">
-        <Text variant="title">website</Text>
-    </div>
+    <Carousel />
   );
 }

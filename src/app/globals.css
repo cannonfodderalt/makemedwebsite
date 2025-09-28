@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Onest:wght@100..900&display=swap");
 @import "tailwindcss";
 
 :root {
-  --color-mm-grey: #353535;
+  --color-mm-grey: #cecece;
 }
 
 @theme inline {
-  --color-primary: var(--color-white);
+  --color-primary: var(--color-grey);
   --color-primary-foreground: var(--color-black);
 
   --color-secondary: var(--color-mm-grey);
-  --color-secondary-foreground: var(--color-white);
+  --color-secondary-foreground: var(--color-grey);
 }
 
 body {
