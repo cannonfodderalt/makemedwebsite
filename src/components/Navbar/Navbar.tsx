@@ -18,11 +18,9 @@ const ListLink = (props: ListLinkProps) => (
 {/* Literally copied this stuff from biomod */}
 const Links = () => (
   <ul className="flex">
-    <ListLink href="/join">Join Us</ListLink>
+    <ListLink href="/about">Meet the Team</ListLink>
     <ListLink href="/support">Support Us</ListLink>
-    <ListLink href="/sponsors">Sponsors</ListLink>
-    <ListLink href="/contact">Contact</ListLink>
-    <ListLink href="/about">About Us</ListLink>
+    <ListLink href="/contact">Contact Us</ListLink>
   </ul>
 );
 
